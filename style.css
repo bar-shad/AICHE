@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    height: 100svh;
+    width: 100%;
+    background-image: linear-gradient(rgba(2, 21, 66, 0.7), rgba(2, 8, 5, 0.5)),url(images/image.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;   
+}
+
+nav{
+    display: flex;
+    padding:1% 2%;
+    justify-content: space-between;
+    align-items: left;
+    font-size: 15px;
+}
+
+nav a {
+    
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+}
+.nav-links{
+    flex: 1;
+    text-align: center;
+}
+
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 1px 10px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+}
+
+.nav-links ul li ::after{
+   content: '';
+   width: 0%;
+   height: 2px;
+   background: #f8fdf9;
+   display: block;
+   margin: auto;
+   transition: 0.5s;
+}
+
+.nav-links ul li :hover::after{
+    width: 100%;
+
+}
+
+.text-box h1{
+    color: #ffffff;
+    font-size: 55px;
+}
+.text-box h2{
+    margin: 10px;
+    color: #fffeff;
+    padding: 1px 5px;
+    font-size: 40px;
+}
+.text-box{
+    width: 100%;
+    color: rgb(255, 255, 255);
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    font-size: 25px;
+}
+
+.hero-btn{
+    display: inline;
+    text-decoration: none;
+    color: rgb(68, 43, 228);
+   font-size: 30px;
+    padding: 12px 20;
+    background: transparent;
+    background-color: #555;
+    position: relative;
+cursor: pointer;
+}
+
+.hero-btn:hover{
+    border: 1px;
+    background: #0b00a6;
+    transition: 1s;
+    
+}
+@media(max-width:700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .text-box h2{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #045719;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+    }
+}
+
+.projects{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    padding: 10x;
+    font-weight: 600;
+}
+
+.projects p{
+    text-align: left;
+    font-size: 20px;
+}
+.row {
+    margin-top: 2%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+    
+}
+.project-col h3{
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+}
+
+.project-col{
+    flex-basis: 45%;
+    background: #1100fe;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    color: #ffffff;
+}
+
+
+
+@media(max-width:700px){
+    .row{
+        flex-direction: column;
+    }
+}
+.symposium{
+    padding: 0%;
+}
+.symposium h1 {
+
+    font-size: 50px;
+}
+
+.symposium p{
+    font-size: 20px;
+    padding: 3%;
+    padding: 10px 20px;
+}
+
+
+.reachus h1{
+    color: #0b00a6;
+    font-size: 50px;
+    padding: 20px 20px;
+}
+.reachus{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color: #000000;
+    background-color: rgb(9, 235, 77);
+   
+}
+
+.reachus-col p{
+    font-size: 25px;
+    color: #6d63ff;
+    padding: 5px 10px;
+}
+
+.reachus-col a{
+    font-size: 50px;
+}
+
+
+.navbar {
+    padding: 10px 15px;
+    width: 100%;
+    background-color: #555;
+    overflow: auto;
+  }
+  
+  /* Navbar links */
+  .navbar a {
+    float: left;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    font-size: 25px;
+    justify-content: space-between;
+  }
+  
+  /* Navbar links on mouse-over */
+  .navbar a:hover {
+    background-color: rgb(13, 151, 230);
+  }
+  
+  /* Current/active navbar link */
+  .active {
+    background-color: #04AA6D;
+  }
+  
+  /* Add responsiveness - will automatically display the navbar vertically instead of horizontally on screens less than 500 pixels */
+  @media screen and (max-width: 500px) {
+    .navbar a {
+      float: none;
+      display: block;
+    }
+  }
+
+
+
